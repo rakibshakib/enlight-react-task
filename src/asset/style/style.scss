@@ -3,6 +3,7 @@
 @import './displayProduct';
 @import './addedCart';
 @import './productDetails';
+@import './footer';
 li {
     list-style: none;
 }
@@ -12,4 +13,8 @@ li {
     &:hover {
         color: rgb(3, 118, 211);
     }
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
 }

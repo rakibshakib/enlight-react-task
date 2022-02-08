@@ -1,58 +1,97 @@
 @mixin lg-display-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @mixin mobile-display-flex {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+.toggle {
+  display: none;
+  background-color: rgb(3, 118, 211);
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+
 .navbar {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    background-color: white;
-    margin-bottom: 200px;
-    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-    &-container {
-        width: 80%;
-        margin: 0 auto;
-        padding: 15px 0;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 200px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  &-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+  &-wrap {
+    @include lg-display-flex;
+    @media only screen and (max-width: 425.5px) {
+      @include mobile-display-flex;
     }
-    &-wrap {
-        @include lg-display-flex;
+  }
+  &-option,
+  &-items {
+    transition: all 0.5s ease;
+    @include lg-display-flex;
+    margin: 0 10px;
+    @media only screen and (max-width: 425.5px) {
+      @include mobile-display-flex;
     }
-    &-option,
-    &-items,
-    &-cart {
-        @include lg-display-flex;
-        margin: 0 10px;
+  }
+  &-items li {
+    margin: 0 7px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      color: rgb(3, 118, 211);
     }
-    &-items li {
-        margin: 0 7px;
-        font-size: 1.2rem;
-        font-weight: 600;
-        cursor: pointer;
-        &:hover {
-            color: rgb(3, 118, 211);
-        }
-    }
-    &-cart {
-        cursor: pointer;
-        background: rgb(3, 118, 211);
-        color: white !important;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 1.1rem;
-    }
+  }
+  &-cart {
+    @include lg-display-flex;
+    cursor: pointer;
+    background: rgb(3, 118, 211);
+    color: white !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
 }
 .add-to-cart-icon {
-    font-size: 2rem;
-    color: white;
+  font-size: 2rem;
+  color: white;
+  display: inline-block;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 425px) {
+  .toggle {
     display: inline-block;
-    margin-right: 10px;
+  }
+  .responsive-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .show-navs {
+    visibility: visible;
+    height: 200px;
+    opacity: 1;
+  }
+  .hide-navs {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
