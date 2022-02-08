@@ -3,8 +3,7 @@ import { StateContext } from '../../context/State';
 import ProductCard from './ProductCard';
 
 const DisplayProduct = () => {
-    const { products, addedToCart } = useContext(StateContext);
-    console.log(addedToCart);
+    const { products } = useContext(StateContext);
     return (
         <div className="display-product">
             <h2>Our Special Product</h2>

@@ -1,14 +1,15 @@
-@import "./navbar";
-@import "./banner";
-@import "./displayProduct";
-@import "./addedCart";
+@import './navbar';
+@import './banner';
+@import './displayProduct';
+@import './addedCart';
+@import './productDetails';
 li {
-  list-style: none;
+    list-style: none;
 }
 .link {
-  text-decoration: none;
-  color: black;
-  &:hover {
-    color: rgb(3, 118, 211);
-  }
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: rgb(3, 118, 211);
+    }
 }

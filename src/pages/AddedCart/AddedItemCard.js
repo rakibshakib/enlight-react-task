@@ -16,7 +16,7 @@ const AddedItemCard = ({ product }) => {
     <div>
       <div className="cart-body">
         <figure className="cart-image">
-          <img src={product.image} alt="" />
+          <img src={product.images[0]} alt="" />
         </figure>
         <div className="cart-productDetails">
           <div className="cart-details">
