@@ -69,8 +69,12 @@
     }
     .details-btn {
       background-color: white;
-      font-size: 1rem;
       margin-right: 2px;
+      font-size: 15px;
+      &:hover{
+          background-color: rgb(13, 121, 13);
+          color: white;
+      }
     }
     .addCartbtn {
       background: rgb(3, 118, 211);

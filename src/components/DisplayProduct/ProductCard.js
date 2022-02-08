@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import { StateContext } from "../../context/State";
 
 const ProductCard = ({ product }) => {
@@ -13,7 +14,9 @@ const ProductCard = ({ product }) => {
         <h4 className="card-title">{product.title}</h4>
         <h4 className="card-price">Price: $ {product.price}</h4>
         <div className="card-btn-group">
-          <button className="details-btn">Details</button>
+          <Link to='/produt-details'>
+            <button className="details-btn">Details</button>
+          </Link>
           <button onClick={() => addToCart(product)} className="addCartbtn">
             <span>Add To Cart </span>
             <AiOutlineShoppingCart className="card-btn-icon" />{" "}
