@@ -1,7 +1,33 @@
-.added-cart-container{
-    margin-top: 100px;
+.added-cart-container {
+  margin-top: 100px;
 }
-.addedCart{
-    width: 80%;
-    margin: 10px auto;
+.addedCart {
+  width: 80%;
+  margin: 10px auto;
+}
+
+// card css
+.cart {
+  &-body {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  &-image {
+    width: 100px;
+    height: 120px;
+    padding: 5px;
+    img {
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgb(201, 199, 199);
+    }
+  }
+  &-productDetails{
+      margin-left: 20px;
+  }
 }
