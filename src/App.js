@@ -1,9 +1,12 @@
-import './App.css';
+import { ContextProvider } from './context/State';
+import Home from './pages/Home/Home';
 
 function App() {
     return (
         <div className="App">
-            <h2>This is simple text </h2>
+            <ContextProvider>
+                <Home />
+            </ContextProvider>
         </div>
     );
 }
