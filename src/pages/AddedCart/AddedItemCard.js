@@ -24,7 +24,7 @@ const AddedItemCard = ({ product }) => {
             <p>Price: ${product.price}</p>
           </div>
           <div className="cart-btn">
-            <button onClick={removeItem}>Remove From Cart</button>
+            <button  onClick={removeItem}>Remove From Cart</button>
           </div>
         </div>
       </div>

@@ -43,13 +43,16 @@
     }
     &-cart {
         cursor: pointer;
-        border: 1px solid gray;
-        padding: 0 5px;
+        background: rgb(3, 118, 211);
+        color: white !important;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 1.1rem;
     }
 }
 .add-to-cart-icon {
     font-size: 2rem;
-    color: rgb(3, 118, 211);
+    color: white;
     display: inline-block;
     margin-right: 10px;
 }

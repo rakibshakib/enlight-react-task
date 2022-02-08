@@ -30,4 +30,24 @@
   &-productDetails{
       margin-left: 20px;
   }
+  &-details{
+    h4{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+  }
+  
+  &-btn button{
+      background: rgb(248, 100, 0);
+      color: white;
+      padding: 7px 10px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      margin: 10px 0;
+      font-size: 14px;
+      &:hover{
+          background-color: rgb(255, 6, 6);
+      }
+  }
 }
