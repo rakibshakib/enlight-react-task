@@ -17,7 +17,9 @@ const Navbar = () => {
         <div className="navbar-wrap">
           <div className="responsive-bar">
             <div className="navbar-brand">
-              <h2>ES-Shopping</h2>
+              <Link to="/" className="link">
+                <h1>ES Shopping</h1>
+              </Link>
             </div>
             <button onClick={handleToggle} className="toggle">
               <AiOutlineBars />
@@ -33,7 +35,11 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li>Product</li>
+              <li>
+                <Link to="/products" className="link">
+                  Product
+                </Link>
+              </li>
               <li>About Us</li>
               <li>Contact</li>
             </div>

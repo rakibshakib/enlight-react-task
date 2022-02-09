@@ -3,6 +3,7 @@ import { ContextProvider } from "./context/State";
 import AddedCart from "./pages/AddedCart/AddedCart";
 import Home from "./pages/Home/Home";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import Products from "./pages/Products/Products";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/added-product" element={<AddedCart />} />
             <Route path="/productdetails/:id" element={<ProductDetails />} />
+            <Route path="/products" element={<Products />} />
           </Routes>
         </BrowserRouter>
       </ContextProvider>
