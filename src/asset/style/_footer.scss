@@ -4,6 +4,9 @@
     color: white;
     width: 100%;
     margin-top: 50px;
+    @media only screen and (max-width: 425px) {
+      width: 118%;
+  }
   }
   &-container {
     display: grid;

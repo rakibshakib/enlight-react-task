@@ -19,7 +19,7 @@ const DisplayProduct = () => {
   };
   return (
     <div className="display-product">
-      <h2>Our Special Product</h2>
+      <h2 style={{textAlign: "center", margin: "50px 0px"}}>Our Special Product</h2>
 
       <div className="display-product-container">
         {getCurrentProducts.map((product) => (

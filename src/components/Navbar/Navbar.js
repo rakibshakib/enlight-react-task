@@ -18,7 +18,7 @@ const Navbar = () => {
           <div className="responsive-bar">
             <div className="navbar-brand">
               <Link to="/" className="link">
-                <h1>ES Shopping</h1>
+                <h1 className="brand-name">ES Shopping</h1>
               </Link>
             </div>
             <button onClick={handleToggle} className="toggle">
