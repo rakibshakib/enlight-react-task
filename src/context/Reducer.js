@@ -10,7 +10,6 @@ export const reducer = (state, action) => {
                     addedToCart: [...state.addedToCart, action.payload],
                 };
             }
-
         // eslint-disable-next-line no-fallthrough
         case 'REMOVE_FROM_CART':
             const remainnigProduct = state.addedToCart.filter(
